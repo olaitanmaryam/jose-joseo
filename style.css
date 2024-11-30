@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #211f1d;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+header {
+    width: 96%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 4px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #211f1d;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    scrollbar-width: none;
+
+}
+
+.left {
+    height: 40px;
+    margin-left: 12px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    list-style: none;
+}
+
+ul li  {  
+    list-style: none;
+    margin-inline: 8px;
+    font-size: 16px;
+}
+
+li a, li a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover, li a:focus {
+    text-decoration: underline;
+}
+
+ul div, ul p {
+    display: none;
+}
+
+.right {
+    margin-right: 12px;
+}
+
+.social {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+main {
+    width: 96%;
+    height: max-content;
+    margin: 0 auto;
+    margin-top: 8px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 80%;
+}
+
+.first  {
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    margin-top: 8px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.first .row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.first .row img:nth-child(1), .first .row img:nth-child(3) {
+    width: 28%;
+    height: 388px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.first .row img:nth-child(2) {
+    width: 40%;
+    height: 508px;
+    margin: 0 auto;
+}
+
+.caption {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', 'Inter';
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.second {
+    width: 100%;
+    height: max-content;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: row;
+}
+
+.second div {
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.second img {
+    width: 48%;
+    height: 448px;
+    margin: 0 auto;
+}
+
+.third {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.third img {
+    width: 32%;
+    height: 348px;
+    margin: 0 auto;
+}
+
+.third div {
+    width: 28%;
+    height: 368px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+button {
+    width: 68%;
+    height: 28px;
+    padding: 0 12px;
+    outline: 4px double #000;    
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.fourth {
+    width: 88%;
+    height: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.fourth img {
+    width: 32%;
+    height: 320px;
+}
+
+.fourth img:nth-child(2) {
+    margin-top: 28px;
+    height: 360px;
+}
+
+.second, .third, .fourth {
+    margin-top: 40px;
+}
+
+a:hover, img:hover, button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 912px ) {
+    button {
+        width: 80%;
+    }
+
+    .third div {
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: flex;
+        width: 24px;
+        height: 20px;
+        margin: 0 auto;
+        margin-right: 12px;
+        background-color: #fff;
+        border: 2px solid #fff;
+    }
+
+    #menuList {
+        transition: all 0.2s;
+    }
+
+    .left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul {    
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+        height: 96vh;
+        margin: 0 auto;
+        margin-top: 8px;
+        margin-left: -32px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-flow: column; 
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #211f1d;
+    }
+
+    ul li, ul div {
+        margin-right: -360px;
+    }
+
+    ul div {
+        display: flex;
+        flex-flow: row;
+        gap: 8px;
+    }
+
+    .social {
+        width: 16px;
+        height: 16px;
+    }
+
+    ul p {
+        display: flex;
+        font-size: 12px;
+        font-weight: 520;
+        font-style: italic;
+        text-align: center;
+    }
+
+    ul p {
+        margin-right: 12px;
+    }
+
+    .right {
+        display: none;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .first .row {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+    
+    .first .row img:nth-child(1), .first .row img:nth-child(2), .first .row img:nth-child(3) {
+        width: 88%;
+        height: 302px;
+        margin: 0 auto;
+        margin-top: 8px;
+    }
+
+    .first img:hover {
+        transform: scaleX(1.1);
+    }
+
+    .second {
+        flex-flow: row;
+    }
+
+    .second div {
+        flex-flow: column;
+    }
+
+    .second img {
+        width: 96%;
+        height: 248px;
+        margin: 0 auto;
+    }
+
+    .third {
+        flex-flow: column;
+    }
+
+    .third img {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .third div {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .third div p {
+        font-size: 14px;
+    }
+
+    button {
+        margin: 16px auto;
+        width: 40%;
+    }
+
+    .second img:hover, .third img:hover {
+        transform: scaleX(1.04);
+    }
+
+    .fourth {
+        width: 96%;
+    }
+
+    .fourth img {
+        width: 32%;
+    }
+
+    .fourth img:hover {
+        transform: scaleX(1.12);
+    }
+}
+
+@media screen and (max-width: 436px) {
+    ul li, ul div {
+        margin-right: -280px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    ul li, ul div {
+        margin-right: -240px;
+    }
+
+    ul p {
+        margin: 0 auto;
+    }
+   
+    button {
+        width: 60%;
+    }
+}
+
+@media screen and (width: 320px) {
+    ul li, ul div {
+        margin-right: -220px;
+    }
+
+    ul p {
+        padding-right: 16px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    header .left {
+        margin-left: 0;
+    }
+
+    .brand-name {
+        font-size: 16px;
+    }
+
+    .menu {
+        margin-right: 0;
+        width: 14px;
+        height: 12px;
+    }
+
+    div h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    ul li, ul div {
+        margin-right: -120px;
+    }
+
+    ul p {
+        padding-right: 12px;
+    }
+    
+    button {
+        width: 88%;
+    }
+}
+    
+    
